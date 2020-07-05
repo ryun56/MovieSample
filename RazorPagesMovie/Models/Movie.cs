@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RazorPagesMovie.Models
 {
+    //ここにはデータベース情報を定義する
     public class Movie
     {
         public int ID { get; set; }
