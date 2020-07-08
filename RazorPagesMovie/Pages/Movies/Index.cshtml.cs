@@ -20,6 +20,7 @@ namespace RazorPagesMovie.Pages.Movies
 
         public IList<Movie> Movie { get;set; }
 
+        //ページに対して要求が行われると、以下のメソッドが呼ばれ、ムービーのリストを取得、表示
         public async Task OnGetAsync()
         {
             Movie = await _context.Movie.ToListAsync();
