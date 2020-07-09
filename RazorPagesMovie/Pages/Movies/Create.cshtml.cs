@@ -30,11 +30,13 @@ namespace RazorPagesMovie.Pages.Movies
         // more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
+            //モデルエラーがあるか確認
             if (!ModelState.IsValid)
             {
                 return Page();
             }
 
+            //エラーがない場合はデータ保存され、インデックスページにリダイレクト
             _context.Movie.Add(Movie);
             await _context.SaveChangesAsync();
 

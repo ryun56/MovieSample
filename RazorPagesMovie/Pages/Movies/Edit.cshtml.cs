@@ -22,6 +22,7 @@ namespace RazorPagesMovie.Pages.Movies
         [BindProperty]
         public Movie Movie { get; set; }
 
+        //データベースからmovieをフェッチし、Pageメソッドを返す
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
