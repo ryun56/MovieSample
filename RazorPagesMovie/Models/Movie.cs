@@ -18,8 +18,5 @@ namespace RazorPagesMovie.Models
         //データベースの通貨とpriceが正しくマッピングするよう以下に注釈
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
-
-        //ムービーモデルへの評価プロパティ追加
-        public string Rating { get; set; }
     }
 }
